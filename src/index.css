@@ -62,6 +62,15 @@ body {
   padding: 0px;
 }
 
+/* REACT ROUTER LINK DEFAULT STYLE */
+
+.link-black {
+  color: inherit;
+}
+.link-black:hover {
+  text-decoration: none;
+}
+
 /*                                                                              NAVBAR                                     */
 .exp {
   margin-left: 50px;

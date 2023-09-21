@@ -48,7 +48,7 @@ function Home() {
             </a>
             <a
               className="btn services-btn btn-dark btn-lg"
-              href="/about"
+              href="/vite-carshop/about"
               role="button"
             >
               Learn more

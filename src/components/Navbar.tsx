@@ -1,8 +1,10 @@
+import { Link, Outlet } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-gradient">
-        <a className="navbar-brand " href="/home">
+        <a className="navbar-brand ">
           <img
             src="https://www.freepnglogos.com/uploads/cleveland-auto-show-car-logo-png-25.png"
             width="80"
@@ -11,9 +13,13 @@ export default function Navbar() {
             alt="CarRental Logo"
           />
         </a>
-        <a className="navbar-brand navbar-car-brand" href="/home">
-          CarRental
+
+        <a className="navbar-brand navbar-car-brand">
+          <Link className="link-black" to="/vite-carshop/home">
+            CarRental
+          </Link>
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -29,24 +35,32 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link exp" href="/home">
-                  Home <span className="sr-only">(current)</span>
+                <a className="nav-link exp">
+                  <Link className="link-black" to="/vite-carshop/home">
+                    Home
+                  </Link>
+                  <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item exp">
-                <a className="nav-link" href="/about">
-                  About us
+                <a className="nav-link">
+                  <Link className="link-black" to="/vite-carshop/about">
+                    About us
+                  </Link>
                 </a>
               </li>
               <li className="nav-item exp">
-                <a className="nav-link" href="/contact">
-                  Contact
+                <a className="nav-link">
+                  <Link className="link-black" to="/vite-carshop/contact">
+                    Contact
+                  </Link>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <Outlet />
     </>
   );
 }
