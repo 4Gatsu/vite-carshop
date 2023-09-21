@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PickCar from "../components/PickCar";
 import FAQ from "../components/FAQ";
+import { Link, Outlet } from "react-router-dom";
 
 const one = "The place for real car enthusiasts";
 const two =
@@ -46,13 +47,12 @@ function Home() {
             >
               Book a ride
             </a>
-            <a
-              className="btn services-btn btn-dark btn-lg"
-              href="/vite-carshop/about"
-              role="button"
-            >
-              Learn more
-            </a>
+
+            <Link className="link-white" to="/vite-carshop/about">
+              <a className="btn services-btn btn-dark btn-lg" role="button">
+                Learn more
+              </a>
+            </Link>
           </div>
         </div>
         <div className="services-image">
@@ -83,6 +83,7 @@ function Home() {
           <p>On-time delivery to your exact location</p>
         </div>
       </div>
+      <Outlet />
       <PickCar />
       <FAQ />
       <Footer />

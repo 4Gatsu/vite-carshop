@@ -71,6 +71,14 @@ body {
   text-decoration: none;
 }
 
+.link-white {
+  color: white;
+}
+.link-white:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /*                                                                              NAVBAR                                     */
 .exp {
   margin-left: 50px;
