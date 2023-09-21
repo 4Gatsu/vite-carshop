@@ -9,6 +9,7 @@ function App() {
     <div>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/*" element={<Home />} />
         <Route path="/vite-carshop/" element={<Home />} />
         <Route path="/vite-carshop/home" element={<Home />} />
         <Route path="/vite-carshop/about" element={<About />} />
