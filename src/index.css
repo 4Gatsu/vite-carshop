@@ -204,6 +204,16 @@ body {
   .home-2nd-img {
     display: block;
   }
+  .navbar {
+    height: 8rem;
+  }
+  .navbar .exp {
+    font-size: 2rem;
+  }
+  .first-text {
+    font-size: 2rem;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
 }
 
 .first-text {

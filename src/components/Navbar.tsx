@@ -14,7 +14,7 @@ export default function Navbar() {
           />
         </a>
 
-        <a className="navbar-brand navbar-car-brand">
+        <a className="navbar-brand navbar-car-brand exp">
           <Link className="link-black" to="/vite-carshop/home">
             CarRental
           </Link>
