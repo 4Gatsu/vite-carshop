@@ -2,6 +2,11 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Employee_Links from "../components/Employee_Links";
 
+const aboutText =
+  "At CarShop, we believe that convenience and reliability are the driving forces behind every successful journey. As a premier car rental service, we are dedicated to providing you with an exceptional experience, whether you're traveling for business or pleasure. We take pride in offering a diverse fleet of high-quality vehicles and a customer-centric approach that sets us apart from the rest.Experience the convenience, comfort, and freedom that comes with renting a top-quality vehicle from a trusted provider. Book your next adventure with CarShop today!";
+const aboutTextMobile =
+  "At CarShop, we believe that convenience and reliability are the driving forces behind every successful journey. As a premier car rental service, we are dedicated to providing you with an exceptional experience.";
+
 function About() {
   return (
     <div className="bg-black">
@@ -16,17 +21,8 @@ function About() {
           </div>
           <div className="text-container remove-text-blur">
             <h1>About Us</h1>
-            <p>
-              At CarShop, we believe that convenience and reliability are the
-              driving forces behind every successful journey. As a premier car
-              rental service, we are dedicated to providing you with an
-              exceptional experience, whether you're traveling for business or
-              pleasure. We take pride in offering a diverse fleet of
-              high-quality vehicles and a customer-centric approach that sets us
-              apart from the rest.Experience the convenience, comfort, and
-              freedom that comes with renting a top-quality vehicle from a
-              trusted provider. Book your next adventure with CarShop today!
-            </p>
+            <p className="aboutText">{aboutText}</p>
+            <p className="aboutTextMobile">{aboutTextMobile}</p>
           </div>
         </div>
       </div>
@@ -113,9 +109,8 @@ function About() {
               <div className="carousel-caption">
                 <h5>John D.</h5>
                 <p>
-                  FastWheels Car Rentals made my trip a breeze with their
-                  hassle-free booking process and top-notch vehicle selection.
-                  Highly recommended!"
+                  FastWheels Car Rentals made my trip a breeze. Highly
+                  recommended!"
                 </p>
               </div>
             </div>
@@ -128,10 +123,8 @@ function About() {
               <div className="carousel-caption">
                 <h5>Daniel H.</h5>
                 <p>
-                  "I had an amazing experience renting a car from FastWheels.
-                  The staff was friendly, the rates were affordable, and the
-                  vehicle was in excellent condition. Will definitely rent from
-                  them again!"
+                  "The staff was friendly, the rates were affordable, and the
+                  vehicle was in excellent condition"
                 </p>
               </div>
             </div>
@@ -145,9 +138,7 @@ function About() {
                 <h5>Michael S.</h5>
                 <p>
                   "FastWheels Car Rentals provided exceptional service from
-                  start to finish. Their flexibility, professionalism, and
-                  quality vehicles exceeded my expectations. A definite go-to
-                  for all my car rental needs."
+                  start to finish. A definite go-to for my car rental needs."
                 </p>
               </div>
             </div>

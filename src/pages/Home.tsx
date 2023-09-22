@@ -9,6 +9,12 @@ const two =
   "Rev up your dreams at CarShop, where exceptional service, automotive expertise, and unbeatable prices come together";
 
 function Home() {
+  const handleClickScroll = () => {
+    const element = document.getElementById("pick-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <Navbar />
@@ -42,8 +48,8 @@ function Home() {
           <div className="services-buttons">
             <a
               className="btn services-btn btn-danger btn-lg"
-              href="#down"
               role="button"
+              onClick={handleClickScroll}
             >
               Book a ride
             </a>

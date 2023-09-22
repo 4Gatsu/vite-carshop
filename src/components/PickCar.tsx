@@ -20,7 +20,7 @@ function PickCar() {
   const [active, setActive] = useState(cars[0].id);
 
   return (
-    <section className="pick-section">
+    <section id="pick-section" className="pick-section">
       <div className="container">
         <div className="pick-container">
           <div className="pick-title" id="down">
